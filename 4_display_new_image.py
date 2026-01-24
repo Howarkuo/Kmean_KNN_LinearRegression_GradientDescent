@@ -23,7 +23,7 @@ import cv2
 # 3,84.1,117.8,173.6,Soft Blue
 # 4,47.3,55.9,27.4,Very Dark Brown/Green
 
-img = plt.imread("a.jpg")
+img = plt.imread("fig/a.jpg")
 
 width = img.shape[0]
 height = img.shape[1]
