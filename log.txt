@@ -1,0 +1,16 @@
+Linear Regression Matrix 
+
+1. Create a row matrix (A)
+2. Turn it into column matrix (A.transpose)
+3. Create 'Desing matrix'- (np.concatenate)
+Concatenate the column matrix with 1 column matrix (e.g: if the old matrix is 1*n , the concatenate matrix is 2*n)
+The reason why to concatenate with 1 vector is to fit it into line equation y =m.x +c .1 , if we multiple this new 2*n matrix with matrix.T (matrix = [slope, intercept ]) we can solve the line equation y
+Without the column of 1's, the math forces the line to go through the origin (0,0), preventing the line from shifting up or down to fit the data
+4. Obtain the line formula. 
+dervied from A.x = b -> x = A^-1 .b
+EXTEND  to 15 points:
+by multiply both side by A^T ,   A is (15 x2), A^T is (2x 15) , A^T x A becomes a (2x2) square matrix
+so Ax = b -> A^T .A .x= A^T.b, 
+now solve for x , x= ( A^T . A) ^-1  x (A^T x b)
+5. create start point coordinate for the regression line (x0) and derive y0
+
